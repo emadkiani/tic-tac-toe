@@ -13,6 +13,9 @@
         <link rel="stylesheet" href="styles/overlays.css">
         <link rel="stylesheet" href="styles/configuration.css">
         <link rel="stylesheet" href="styles/game.css">
+        <script src="scripts/config.js" defer></script>
+        <script src="scripts/game.js" defer></script>
+        <script src="scripts/app.js" defer></script>
     </head>
 
     <body>
@@ -24,33 +27,34 @@
         <main>
             <aside class="modal" id="config-overlay">
                 <h2>Choose your name</h2>
-                <form>
+                <form id="config-form">
                     <div class="form-control">
                         <label for="player-name">Player name</label>
-                        <input type="text" name="playername" id="player-name">
+                        <input type="text" name="playername" id="player-name" required>
                     </div>
+                    <p id="config-errors"></p>
                     <div>
                         <button type="submit" class="btn">Confirm</button>
-                        <button type="button" class="btn btn-alt">Cancel</button>
+                        <button type="reset" class="btn btn-alt" id="cancel-config-btn">Cancel</button>
                     </div>
                 </form>
             </aside>
             <section id="game-config">
                 <ol>
                     <li>
-                        <article>
+                        <article id="player-1-data">
                             <h2>Player 1</h2>
                             <h3>PLAYER NAME</h3>
                             <p class="player-symbol">X</p>
-                            <button class="btn btn-alt">Edit</button>
+                            <button class="btn btn-alt" id="edit-btn-player-1" data-playerid="1">Edit</button>
                         </article>
                     </li>
                     <li>
-                        <article>
+                        <article id="player-2-data">
                             <h2>Player 2</h2>
                             <h3>PLAYER NAME</h3>
                             <p class="player-symbol">O</p>
-                            <button class="btn btn-alt">Edit</button>
+                            <button class="btn btn-alt" id="edit-btn-player-2" data-playerid="2">Edit</button>
                         </article>
                     </li>
                 </ol>
