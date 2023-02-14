@@ -1,3 +1,16 @@
+html {
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-grey-100: #EEEEEE;
+    --color-grey-300: #DDDDDD;
+    --color-gery-700: #30475E;
+    --color-gery-900: #222831;
+    --color-red-300: #F05454;
+    --color-red-500: #DA0037;
+    --color-yellow-500: #FFDD93;
+    --color-yellow-700: #FFBD69;
+}
+
 #active-game {
     text-align: center;
     padding: 0;
@@ -8,6 +21,7 @@
 #active-game p {
     margin: 0;
     padding: 2rem;
+    color: var(--color-white);
 }
 
 #game-over {
@@ -15,10 +29,10 @@
     max-width: 40rem;
     padding: 1rem 0;
     margin: 0 auto;
-    background-color: rgb(50, 5, 87);
+    background-color: var(--color-yellow-700);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    color: white;
+    color: var(--color-white);
     display: none;
 }
 
@@ -35,7 +49,7 @@
 
 #active-player-name {
     font-weight: bold;
-    color: rgb(50, 5, 87);
+    color: var(--color-gray-900);
 }
 
 #game-board {
@@ -50,7 +64,7 @@
 }
 
 #game-board li {
-    background-color: rgb(215, 187, 247);
+    background-color: var(--color-grey-100);
     border-radius: 2px;
     cursor: pointer;
     display: flex;
@@ -61,22 +75,22 @@
 }
 
 #game-board li:hover {
-    background-color: rgb(112, 13, 204);
+    background-color: var(--color-yellow-700);
 }
 
 #game-board li.disabled {
-    background-color: rgb(112, 13, 204);
+    background-color: var(--color-yellow-700);
     color: white;
     cursor: default;
 }
 
 #game-board li.deactivate {
-    background-color:rgb(215, 187, 247);
+    background-color:var(--color-grey-100);
     cursor: default;
 }
 
 #game-board li.winner {
-    background-color: red;
+    background-color: var(--color-red-500);
     color: white;
     cursor: default;
 }

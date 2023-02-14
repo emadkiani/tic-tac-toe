@@ -1,3 +1,16 @@
+html {
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-grey-100: #EEEEEE;
+    --color-grey-300: #DDDDDD;
+    --color-gery-700: #30475E;
+    --color-gery-900: #222831;
+    --color-red-300: #F05454;
+    --color-red-500: #DA0037;
+    --color-yellow-500: #FFDD93;
+    --color-yellow-700: #FFBD69;
+}
+
 #config-overlay {
     text-align: center;
 }
@@ -18,7 +31,7 @@
 
 .form-control input {
     font: inherit;
-    border: 1px solid rgb(204, 204, 204);
+    border: 1px solid var(--color-grey-300);
     width: 15rem;
     padding: 0.35rem;
     border-radius: 4px;
@@ -26,13 +39,12 @@
 }
 
 .error label {
-    color: rgb(136, 2, 2);
+    color: var(--color-red-500);
 }
 
 .error input{
-    background-color: rgb(253, 219, 219);
-    border-color: rgb(136, 2, 2);
-    color: rgb(136, 2, 2);
+    border-color: var(--color-red-500);
+    color: var(--color-red-500);
 }
 
 #game-config {
@@ -56,7 +68,7 @@
 #game-config li {
     margin: 1rem 0;
     padding: 1rem 0;
-    background-color: rgb(247, 227, 255);
+    background-color: var(--color-white);
     border-radius: 4px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
@@ -71,13 +83,13 @@
     font-size: 1.5rem;
     padding: 0.5rem 0;
     margin: 0;
-    color: rgb(94, 4, 168);
+    color: var(--color-yellow-700);
 }
 
 .player-symbol {
     font-size: 2rem;
     font-weight: bold;
-    color: rgb(47, 4, 82);
+    color: var(--color-gery-900);
     padding: 0.5rem 0;
     margin: 0;
 }

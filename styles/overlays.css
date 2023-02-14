@@ -1,9 +1,22 @@
+html {
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-grey-100: #EEEEEE;
+    --color-grey-300: #DDDDDD;
+    --color-gery-700: #30475E;
+    --color-gery-900: #222831;
+    --color-red-300: #F05454;
+    --color-red-500: #DA0037;
+    --color-yellow-500: #FFDD93;
+    --color-yellow-700: #FFBD69;
+}
+
 .modal {
     position: fixed;
     top: 20%;
     left: 5%;
     width: 90%;
-    background-color: white;
+    background-color: var(--color-white);
     padding: 1rem;
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
