@@ -7,9 +7,20 @@ body {
 
 header {
     background-color: rgb(140, 0, 255);
+    padding: 1rem 3rem;
     color: white;
-    padding: 2rem 5%;
     text-align: center;
+}
+
+header h1 {
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+header p {
+    margin: 0;
+    padding: 0.5rem 0;
 }
 
 .btn {
@@ -33,4 +44,23 @@ header {
 
 .btn-alt:hover {
     background-color: rgb(230, 201, 252);
+}
+
+footer {
+    padding: 5rem 0rem 3rem 0rem;
+    text-align: center;
+}
+
+footer p {
+    color: rgb(131, 113, 149);
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 48rem){
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
