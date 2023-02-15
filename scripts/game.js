@@ -273,6 +273,8 @@ function endGameColor ( num, pos )
 
 function endGame ( winnderId )
 {
+    const winnerNameElement = document.getElementById( 'winner-name' );
+
     gameIsOver = true;
     gameOver.style.display = 'block';
 

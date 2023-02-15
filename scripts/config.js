@@ -22,13 +22,14 @@ function savePlayerConfig ( event )
 
     if ( !enteredPlayername )
     {
-        formControlElement.classList.add( 'error' );
+        formControl.classList.add( 'error' );
         errorsOutput.textContent = 'Please enter a valid name!';
         return;
     }
 
     const playerName = document.getElementById( `player-${ editedPlayer }-name` );
     playerName.textContent = enteredPlayername;
+    players[ editedPlayer - 1 ].name = enteredPlayername;
 
     closePlayerConfig();
 }

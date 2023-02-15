@@ -30,7 +30,6 @@ const gameOver = document.getElementById( 'game-over' );
 const formControl = document.getElementById( 'formcontrol' );
 const playerNameInput = document.getElementById( 'player-name' );
 const gameOverMessage = document.getElementById( 'game-over-message' );
-const winnerNameElement = document.getElementById( 'winner-name' );
 
 const editBtnPlayer1 = document.getElementById( 'edit-btn-player-1' );
 const editBtnPlayer2 = document.getElementById( 'edit-btn-player-2' );
