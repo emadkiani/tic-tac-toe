@@ -1,42 +1,42 @@
 html {
-    --color-white: #FFFFFF;
-    --color-black: #000000;
-    --color-grey-100: #EEEEEE;
-    --color-grey-300: #DDDDDD;
-    --color-gery-700: #30475E;
-    --color-gery-900: #222831;
-    --color-red-300: #F05454;
-    --color-red-500: #DA0037;
-    --color-yellow-500: #FFDD93;
-    --color-yellow-700: #FFBD69;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-grey-100: #eeeeee;
+  --color-grey-300: #dddddd;
+  --color-gery-700: #30475e;
+  --color-gery-900: #222831;
+  --color-red-300: #f05454;
+  --color-red-500: #da0037;
+  --color-yellow-500: #ffdd93;
+  --color-yellow-700: #ffbd69;
 }
 
 .modal {
-    position: fixed;
-    top: 20%;
-    left: 5%;
-    width: 90%;
-    background-color: var(--color-white);
-    padding: 1rem;
-    border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    display: none;
-    box-sizing: border-box;
+  position: fixed;
+  top: 20%;
+  left: 5%;
+  width: 90%;
+  background-color: var(--color-white);
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: none;
+  box-sizing: border-box;
 }
 
 #backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
 }
 
 @media (min-width: 48rem) {
-    .modal {
-        left: calc(50% - 20rem);
-        width: 40rem;
-    }
+  .modal {
+    left: calc(50% - 20rem);
+    width: 40rem;
+  }
 }

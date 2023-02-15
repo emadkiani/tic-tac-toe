@@ -1,96 +1,96 @@
 html {
-    --color-white: #FFFFFF;
-    --color-black: #000000;
-    --color-grey-100: #EEEEEE;
-    --color-grey-300: #DDDDDD;
-    --color-gery-700: #30475E;
-    --color-gery-900: #222831;
-    --color-red-300: #F05454;
-    --color-red-500: #DA0037;
-    --color-yellow-500: #FFDD93;
-    --color-yellow-700: #FFBD69;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-grey-100: #eeeeee;
+  --color-grey-300: #dddddd;
+  --color-gery-700: #30475e;
+  --color-gery-900: #222831;
+  --color-red-300: #f05454;
+  --color-red-500: #da0037;
+  --color-yellow-500: #ffdd93;
+  --color-yellow-700: #ffbd69;
 }
 
 #active-game {
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    display: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  display: none;
 }
 
 #active-game p {
-    margin: 0;
-    padding: 2rem;
-    color: var(--color-white);
+  margin: 0;
+  padding: 2rem;
+  color: var(--color-white);
 }
 
 #game-over {
-    width: 90%;
-    max-width: 40rem;
-    padding: 1rem 0;
-    margin: 0 auto;
-    background-color: var(--color-yellow-700);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    color: var(--color-white);
-    display: none;
+  width: 90%;
+  max-width: 40rem;
+  padding: 1rem 0;
+  margin: 0 auto;
+  background-color: var(--color-yellow-700);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  color: var(--color-white);
+  display: none;
 }
 
 #game-over h2 {
-    font-size: 2.5rem;
-    padding: 1rem;
-    margin: 0;
+  font-size: 2.5rem;
+  padding: 1rem;
+  margin: 0;
 }
 
 #game-over p {
-    padding: 1rem;
-    margin: 0;
+  padding: 1rem;
+  margin: 0;
 }
 
 #active-player-name {
-    font-weight: bold;
-    color: var(--color-gray-900);
+  font-weight: bold;
+  color: var(--color-gray-900);
 }
 
 #game-board {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(3, 6rem);
-    grid-template-rows: repeat(3, 6rem);
-    gap: 0.5rem;
-    justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 6rem);
+  grid-template-rows: repeat(3, 6rem);
+  gap: 0.5rem;
+  justify-content: center;
 }
 
 #game-board li {
-    background-color: var(--color-grey-100);
-    border-radius: 2px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.5rem;
-    font-weight: bold;
+  background-color: var(--color-grey-100);
+  border-radius: 2px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 #game-board li:hover {
-    background-color: var(--color-yellow-700);
+  background-color: var(--color-yellow-700);
 }
 
 #game-board li.disabled {
-    background-color: var(--color-yellow-700);
-    color: var(--color-white);
-    cursor: default;
+  background-color: var(--color-yellow-700);
+  color: var(--color-white);
+  cursor: default;
 }
 
 #game-board li.deactivate {
-    background-color:var(--color-grey-100);
-    cursor: default;
+  background-color: var(--color-grey-100);
+  cursor: default;
 }
 
 #game-board li.winner {
-    background-color: var(--color-red-500);
-    color: white;
-    cursor: default;
+  background-color: var(--color-red-500);
+  color: white;
+  cursor: default;
 }

@@ -1,82 +1,82 @@
 html {
-    --color-white: #FFFFFF;
-    --color-black: #000000;
-    --color-grey-100: #EEEEEE;
-    --color-grey-300: #DDDDDD;
-    --color-gery-700: #30475E;
-    --color-gery-900: #222831;
-    --color-red-300: #F05454;
-    --color-red-500: #DA0037;
-    --color-yellow-300: #E1D89F;
-    --color-yellow-500: #FFDD93;
-    --color-yellow-700: #FFBD69;
-    --color-yellow-900: #FFAC41;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-grey-100: #eeeeee;
+  --color-grey-300: #dddddd;
+  --color-gery-700: #30475e;
+  --color-gery-900: #222831;
+  --color-red-300: #f05454;
+  --color-red-500: #da0037;
+  --color-yellow-300: #e1d89f;
+  --color-yellow-500: #ffdd93;
+  --color-yellow-700: #ffbd69;
+  --color-yellow-900: #ffac41;
 }
 
 body {
-    margin: 0;
-    font-family: 'Open-Sans', sans-serif;
-    color: var(--color-gery-900);
-    background-color: var(--color-gery-700);
+  margin: 0;
+  font-family: 'Open-Sans', sans-serif;
+  color: var(--color-gery-900);
+  background-color: var(--color-gery-700);
 }
 
 header {
-    background-color: var(--color-gery-900);
-    padding: 1rem 3rem;
-    text-align: center;
+  background-color: var(--color-gery-900);
+  padding: 1rem 3rem;
+  text-align: center;
 }
 
 header h1 {
-    font-family: 'Poppins',sans-serif;
-    color: var(--color-red-300);
-    margin: 0;
-    padding: 1rem 0;
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-red-300);
+  margin: 0;
+  padding: 1rem 0;
 }
 
 header p {
-    margin: 0;
-    padding: 0.5rem 0;
-    color: var(--color-yellow-500);
+  margin: 0;
+  padding: 0.5rem 0;
+  color: var(--color-yellow-500);
 }
 
 .btn {
-    font: inherit;
-    padding: 0.5rem 1.5rem;
-    background-color: var(--color-yellow-700);
-    border: 0 solid transparent;
-    color: var(--color-white);
-    border-radius: 4px;
-    cursor: pointer;
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  background-color: var(--color-yellow-700);
+  border: 0 solid transparent;
+  color: var(--color-white);
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .btn-alt {
-    background-color: transparent;
-    color: var(--color-yellow-700);
+  background-color: transparent;
+  color: var(--color-yellow-700);
 }
 
 .btn:hover {
-    background-color: var(--color-yellow-900);
+  background-color: var(--color-yellow-900);
 }
 
 .btn-alt:hover {
-    background-color: var(--color-grey-100);
+  background-color: var(--color-grey-100);
 }
 
 footer {
-    padding: 5rem 0rem 3rem 0rem;
-    text-align: center;
+  padding: 5rem 0rem 3rem 0rem;
+  text-align: center;
 }
 
 footer p {
-    color: var(--color-yellow-300);
-    margin: 0;
-    padding: 0;
+  color: var(--color-yellow-300);
+  margin: 0;
+  padding: 0;
 }
 
-@media (min-width: 48rem){
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+@media (min-width: 48rem) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
