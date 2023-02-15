@@ -1,12 +1,11 @@
 function resetGame ()
 {
     editedPlayer = 0;
-    //activePlayer = winnderId - 1;
     currentRound = 0;
     gameIsOver = false;
 
     gameOver.style.display = 'none';
-    gameOver.firstElementChild.innerHTML = 'You won, <span id="winner-name">PLAYER NAME</span>';
+    gameOverMessage.innerHTML = 'You won, <span id="winner-name">PLAYER NAME</span>';
 
     let num = 0;
     for ( let i = 0; i < 3; i++ )
@@ -23,8 +22,15 @@ function resetGame ()
 
 function startNewGame ()
 {
-    if ( players[ 0 ].name === '' ) players[ 0 ].name = 'Player 1';
-    if ( players[ 1 ].name === '' ) players[ 1 ].name = 'Player 2';
+    if ( players[ 0 ].name === '' )
+    {
+        players[ 0 ].name = 'Player 1';
+    }
+
+    if ( players[ 1 ].name === '' )
+    {
+        players[ 1 ].name = 'Player 2';
+    }
 
     resetGame();
 
@@ -37,14 +43,11 @@ function switchPlayer ()
     if ( activePlayer === 0 )
     {
         activePlayer = 1;
-    } else if ( activePlayer === 1 )
-    {
-        activePlayer = 0;
     } else
     {
-        console.log( 'error' );
-        return
+        activePlayer = 0;
     }
+
     activePlayerName.textContent = players[ activePlayer ].name;
 }
 
@@ -61,7 +64,7 @@ function selectGameFiled ( event )
 
     if ( gameData[ selectedRow ][ selectedColumn ] > 0 )
     {
-        alert( 'Please select an empty field!' )
+        alert( 'Please select an empty field!' );
         return;
     }
 
@@ -77,7 +80,7 @@ function selectGameFiled ( event )
     if ( winnerId !== 0 )
     {
         endGame( winnerId );
-        return
+        return;
     }
 
     switchPlayer();
@@ -181,7 +184,10 @@ function endGameColor ( num, pos )
                 }
             }
         }
-    } else if ( pos === 'col' )
+        return;
+    }
+
+    if ( pos === 'col' )
     {
         if ( num === 0 )
         {
@@ -220,9 +226,11 @@ function endGameColor ( num, pos )
                 }
             }
         }
-    } else if ( pos === 'left-diagnoal' )
+        return;
+    }
+
+    if ( num === 0 && pos === 'left-diagnoal' )
     {
-        console.log( 'here left' );
         for ( let i = 0; i < 9; i++ )
         {
             if ( i === 0 || i === 4 || i === 8 )
@@ -233,9 +241,11 @@ function endGameColor ( num, pos )
                 gameField[ i ].classList.add( 'deactivate' );
             }
         }
-    } else if ( pos === 'right-diagnoal' )
+        return;
+    }
+
+    if ( num === 0 && pos === 'right-diagnoal' )
     {
-        console.log( 'here right' );
         for ( let i = 0; i < 9; i++ )
         {
             if ( i === 2 || i === 4 || i === 6 )
@@ -246,28 +256,32 @@ function endGameColor ( num, pos )
                 gameField[ i ].classList.add( 'deactivate' );
             }
         }
-    } else if ( pos === 'none' )
+        return;
+    }
+
+    if ( num === -1 && pos === 'none' )
     {
         for ( let i = 0; i < 9; i++ )
         {
             gameField[ i ].classList.add( 'deactivate' );
         }
-    } else
-    {
-        console.log( 'error' );
+        return;
     }
+
+    return;
 }
 
 function endGame ( winnderId )
 {
     gameIsOver = true;
     gameOver.style.display = 'block';
+
     if ( winnderId > 0 )
     {
-        const winnderName = players[ winnderId - 1 ].name;
-        gameOver.firstElementChild.firstElementChild.textContent = winnderName;
+        const winnerName = players[ winnderId - 1 ].name;
+        winnerNameElement.textContent = winnerName;
     } else
     {
-        gameOver.firstElementChild.textContent = 'It\'is a draw!'
+        gameOverMessage.textContent = 'It\'s a draw!'
     }
 }

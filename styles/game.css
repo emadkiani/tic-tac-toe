@@ -80,7 +80,7 @@ html {
 
 #game-board li.disabled {
     background-color: var(--color-yellow-700);
-    color: white;
+    color: var(--color-white);
     cursor: default;
 }
 

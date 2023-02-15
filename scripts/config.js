@@ -9,9 +9,9 @@ function closePlayerConfig ()
 {
     configOverlay.style.display = 'none';
     backdrop.style.display = 'none';
-    form.firstElementChild.classList.remove( 'error' );
+    formControl.classList.remove( 'error' );
     errorsOutput.textContent = '';
-    form.firstElementChild.lastElementChild.value = '';
+    playerNameInput.value = '';
 }
 
 function savePlayerConfig ( event )
@@ -22,16 +22,13 @@ function savePlayerConfig ( event )
 
     if ( !enteredPlayername )
     {
-        event.target.firstElementChild.classList.add( 'error' );
+        formControlElement.classList.add( 'error' );
         errorsOutput.textContent = 'Please enter a valid name!';
         return;
     }
 
-    const updatedPlayerData = document.getElementById( `player-${ editedPlayer }-data` );
-    updatedPlayerData.children[ 1 ].textContent = enteredPlayername;
-
-    players[ editedPlayer - 1 ].name = enteredPlayername;
-    console.log( players );
+    const playerName = document.getElementById( `player-${ editedPlayer }-name` );
+    playerName.textContent = enteredPlayername;
 
     closePlayerConfig();
 }
