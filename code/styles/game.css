@@ -1,0 +1,83 @@
+#active-game {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+#active-game p {
+    margin: 0;
+    padding: 2rem;
+    color: var(--color-white);
+}
+
+#game-over {
+    width: 90%;
+    max-width: 40rem;
+    padding: 1rem 0;
+    margin: 0 auto;
+    background-color: var(--color-yellow-700);
+    box-shadow: var(--box-shadow-100);
+    border-radius: 4px;
+    color: var(--color-white);
+    display: none;
+}
+
+#game-over h2 {
+    font-size: 2.5rem;
+    padding: 1rem;
+    margin: 0;
+}
+
+#game-over p {
+    padding: 1rem;
+    margin: 0;
+}
+
+#active-player-name {
+    font-weight: bold;
+    color: var(--color-gray-900);
+}
+
+#game-board {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 6rem);
+    grid-template-rows: repeat(3, 6rem);
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+#game-board li {
+    background-color: var(--color-grey-100);
+    border-radius: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#game-board li:hover {
+    background-color: var(--color-yellow-700);
+}
+
+#game-board li.disabled {
+    background-color: var(--color-yellow-700);
+    color: var(--color-white);
+    cursor: default;
+}
+
+#game-board li.deactivate {
+    background-color: var(--color-grey-100);
+    cursor: default;
+}
+
+#game-board li.winner {
+    background-color: var(--color-red-500);
+    color: white;
+    cursor: default;
+}

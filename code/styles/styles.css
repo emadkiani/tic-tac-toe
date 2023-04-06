@@ -1,0 +1,96 @@
+html {
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-grey-100: #eeeeee;
+    --color-grey-300: #dddddd;
+    --color-gery-700: #30475e;
+    --color-gery-900: #222831;
+    --color-red-300: #f05454;
+    --color-red-500: #da0037;
+    --color-yellow-300: #e1d89f;
+    --color-yellow-500: #ffdd93;
+    --color-yellow-700: #ffbd69;
+    --color-yellow-900: #ffac41;
+
+    --box-shadow-100: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    margin: 0;
+    font-family: 'Open-Sans', sans-serif;
+    color: var(--color-gery-900);
+    background-color: var(--color-gery-700);
+}
+
+header {
+    background-color: var(--color-gery-900);
+    text-align: center;
+}
+
+header div {
+    max-width: 64rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-red-300);
+    margin: 0;
+    padding: 1rem 0;
+}
+
+header p {
+    margin: 0;
+    padding: 0.5rem 0;
+    color: var(--color-yellow-500);
+}
+
+main {
+    width: 90%;
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+.btn {
+    font: inherit;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--color-red-300);
+    border: 0 solid transparent;
+    color: var(--color-white);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-alt {
+    background-color: transparent;
+    color: var(--color-yellow-900);
+}
+
+.btn:hover {
+    background-color: var(--color-red-500);
+}
+
+.btn-alt:hover {
+    background-color: var(--color-yellow-900);
+    color: var(--color-white);
+}
+
+footer {
+    padding: 5rem 0rem 3rem 0rem;
+    text-align: center;
+}
+
+footer p {
+    color: var(--color-yellow-300);
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 48rem) {
+    header div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

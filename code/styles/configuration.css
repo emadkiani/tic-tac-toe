@@ -1,0 +1,99 @@
+#config-overlay {
+    text-align: center;
+}
+
+#config-overlay h2 {
+    margin: 0.5rem 0;
+}
+
+.form-control {
+    margin: 0.5rem 0;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-control input {
+    font: inherit;
+    border: 1px solid var(--color-grey-300);
+    width: 15rem;
+    padding: 0.35rem;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.error label {
+    color: var(--color-red-500);
+}
+
+.error input {
+    border-color: var(--color-red-500);
+    color: var(--color-red-500);
+}
+
+#game-config {
+    width: 90%;
+    max-width: 20rem;
+    padding: 1rem 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#start-btn {
+    text-decoration: none;
+}
+
+#game-config ol {
+    list-style: none;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+#game-config li {
+    margin: 1rem 0;
+    padding: 1rem 0;
+    background-color: var(--color-white);
+    border-radius: 4px;
+    box-shadow: var(--box-shadow-100);
+}
+
+#game-config h2 {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    margin: 0;
+}
+
+#game-config h3 {
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    margin: 0;
+    color: var(--color-yellow-900);
+}
+
+.player-symbol {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-gery-900);
+    padding: 0.5rem 0;
+    margin: 0;
+}
+
+@media (min-width: 48rem) {
+    #game-config ol {
+        display: flex;
+    }
+
+    #game-config li {
+        margin: 1rem;
+        padding: 1rem;
+        width: 50%;
+    }
+
+    #game-config {
+        width: 90%;
+        max-width: 40rem;
+    }
+}
