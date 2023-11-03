@@ -1,2 +1,2 @@
 # To start the project
-open index.html
+Open index.html or open it via Live Server extension on visual Studio Code.
